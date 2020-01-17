@@ -24,7 +24,7 @@
 
 
 
-groups_usersテーブル
+## groups_usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -32,14 +32,14 @@ groups_usersテーブル
 |group_id|refarences|null: false, foreign_key: true|
 
 ### Association
-- has_many :users
-- has_many :group
+- belongs_to :users
+- belongs_to :group
 
 ## messageテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|string|null: false|
-|image|string|null: false|
+|text|string||
+|image|string||
 |user_id|refarences|null: false, foreign_key: true|
 |group_id|refarences|null: false, foreign_key: true|
 ### Association
