@@ -32,7 +32,7 @@
 |group_id|refarences|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :users
+- belongs_to :user
 - belongs_to :group
 
 ## messageテーブル
@@ -45,5 +45,5 @@
 ### Association
 
 - belongs_to :group
-- belongs_to:users
+- belongs_to:user
 - 
